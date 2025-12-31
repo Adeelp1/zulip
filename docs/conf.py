@@ -20,6 +20,7 @@ extensions = [
     "myst_parser",
     "sphinx_rtd_theme",
     "sphinx_design",
+    "sphinx_copybutton",
 ]
 templates_path = ["_templates"]
 project = "Zulip"
@@ -36,6 +37,10 @@ pygments_style = "sphinx"
 
 autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 2
+
+# Copy button configuration for code blocks
+copybutton_prompt_text = r"\$ |>>> |\.\.\. "
+copybutton_prompt_is_regexp = True
 
 # Options for Markdown parser
 
